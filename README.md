@@ -1,5 +1,12 @@
 ## EveryFreeApiApp
 Creating app with every available free APIs.
+As you would expect such a project wouldn't be possible without 3rd party libraries.
+Currently used are:
+- GSON
+- Dexter
+- CircleImageView
+- Retrofit
+- Google Location Services
 
 ## Installation
 See tags and download current apk file. You will need to change settings to allow unidentified source app installation.
