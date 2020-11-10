@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EverythingYouNeed</string>
+    <string name="bored_api_url">http://www.boredapi.com/api/activity/</string>
+
+
+    <string name="calendarific_api_url">https://calendarific.com/</string>
+    <string name="calendarific_api_key">dad9cfb98782e02182b4abfe6fe05bde469e4da6</string>
+
+    <string name="weather_api_key">f4f07599b5ba8f12d33952e43fad4eb0</string>
+    <string name="weather_api_url">http://api.openweathermap.org/data/</string>
+
+</resources>
