@@ -34,10 +34,11 @@ class MainActivity : AppCompatActivity() {
             override fun onClick(position: Int, model: MenuItem) {
                 when(position)
                 {
-                    0 ->
-                    {
-                        startActivity(Intent(this@MainActivity, BoredApiActivity::class.java))
-                    }
+                    0 -> startActivity(Intent(this@MainActivity, BoredApiActivity::class.java))
+
+                    1 -> startActivity(Intent(this@MainActivity, CalendarificActivity::class.java))
+
+                    2-> startActivity(Intent(this@MainActivity, WeatherActivity::class.java))
                 }
             }
 

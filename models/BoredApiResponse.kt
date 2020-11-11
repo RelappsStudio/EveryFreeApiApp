@@ -11,3 +11,4 @@ data class BoredApiResponse (
     val link: String,
     val key: String
 ):Serializable
+
