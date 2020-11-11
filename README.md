@@ -17,7 +17,7 @@ Currently used are:
 This app is developed for everybody that is currently learning and needs to see how you can use different tools with working examples and complete code to reuse if you just want to use parts of the app.
 
 ## Installation
-See tags and download current apk file. You will need to change settings to allow unidentified-source-app installation.
+See tags and download current apk file. You will need to change settings to allow unidentified-source-app installation. If you already had installed previous versions you need to uninstall them for new installation to work.
 
 ## Latest release V:0.0.3
 This release sees addition and update of following APIs:
