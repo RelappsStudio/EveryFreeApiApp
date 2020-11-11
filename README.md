@@ -1,4 +1,4 @@
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/RelappsStudio/EveryFreeApiApp?label=Latest%20Version&logo=github)
+![GitHub tag](https://img.shields.io/github/v/tag/RelappsStudio/EveryFreeApiApp?label=Latest%20Version&logo=github)
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/RelappsStudio/EveryFreeApiApp/total?logo=github)
 
@@ -19,11 +19,12 @@ This app is developed for everybody that is currently learning and needs to see 
 ## Installation
 See tags and download current apk file. You will need to change settings to allow unidentified-source-app installation.
 
-## Latest release V:0.0.2
+## Latest release V:0.0.3
 This release sees addition and update of following APIs:
 - [Bored](https://www.boredapi.com/documentation)
 - [OpenWeatherMap](https://openweathermap.org)
 - [Calendarific](https://calendarific.com)
+- [REST Countries](https://restcountries.eu)
 
 ## Roadmap
 Planned updates include:
