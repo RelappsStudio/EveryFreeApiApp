@@ -12,6 +12,7 @@ Currently used are:
 - [CircleImageView](https://github.com/hdodenhof/CircleImageView)
 - [Retrofit](https://square.github.io/retrofit/)
 - [Google Location Services](https://developers.google.com/android/guides/overview)
+- [Glide](https://bumptech.github.io/glide/)
 
 ## Purpose
 This app is developed for everybody that is currently learning and needs to see how you can use different tools with working examples and complete code to reuse if you just want to use parts of the app.
@@ -25,6 +26,7 @@ This release sees addition and update of following APIs:
 - [OpenWeatherMap](https://openweathermap.org)
 - [Calendarific](https://calendarific.com)
 - [REST Countries](https://restcountries.eu)
+- [Cheapshark](https://apidocs.cheapshark.com)
 
 ## Roadmap
 Planned updates include:
