@@ -27,6 +27,11 @@ This release sees addition and update of following APIs:
 - [Calendarific](https://calendarific.com)
 - [REST Countries](https://restcountries.eu)
 - [Cheapshark](https://apidocs.cheapshark.com)
+- [Dog-CEO](https://dog.ceo/dog-api/)
+- [PlaceGOAT](https://placegoat.com) 
+- [RandomFox](https://randomfox.ca)
+- [The Cat API](thecatapi.com) 
+
 
 ## Roadmap
 Planned updates include:
@@ -42,3 +47,4 @@ This project is under [Apache License 2.0](https://www.apache.org/licenses/LICEN
 
 ## Source
 My source for free APIs is [here](https://github.com/public-apis/public-apis)
+All activity icons taken from [here](https://www.flaticon.com)
