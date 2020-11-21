@@ -2,6 +2,7 @@ package com.relapps.everythingyouneed.activities
 
 import android.app.DatePickerDialog
 import android.app.Dialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +17,7 @@ import com.relapps.everythingyouneed.models.calendarificModels.CalendarificRespo
 import com.relapps.everythingyouneed.services.CalendarificService
 import com.relapps.everythingyouneed.services.CountryNameService
 import kotlinx.android.synthetic.main.activity_calendarific.*
+import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -47,8 +49,32 @@ class CalendarificActivity : AppCompatActivity() {
             datePicker()
         }
 
+        setupBottomBar()
 
+    }
 
+    private fun setupBottomBar() {
+        bottom_navigation_calendarific.setOnNavigationItemReselectedListener {
+            when(it.itemId)
+            {
+                R.id.action_home ->
+                {
+                    Constants.menuItemsTagSelection = 0
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+                R.id.action_tools ->
+                {
+                    Constants.menuItemsTagSelection = 1
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+                R.id.action_entertainment ->
+                {
+                    Constants.menuItemsTagSelection = 2
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+
+            }
+        }
     }
 
     private fun setVariablesToCurrent()
@@ -141,7 +167,7 @@ class CalendarificActivity : AppCompatActivity() {
                 {
                         var random = kotlin.random.Random.nextInt(0, countries.size)
                     country = ("${(countries[random])[(countries[random].length - 2)]}${(countries[random])[(countries[random].length - 1)]}").capitalize()
-                    getHolidays(countries[position])
+                    getHolidays(countries[random])
                 }
                 else if (countries[position] == "Current")
                 {
@@ -231,7 +257,15 @@ class CalendarificActivity : AppCompatActivity() {
     {
         if (response.response.holidays.isNullOrEmpty())
         {
-            tvHolidayDescription.text = "Sadly, no holidays today in ${chosenCountry.subSequence(0, chosenCountry.length - 4)}. Work is mandatory"
+            if (chosenCountry == "Current")
+            {
+                tvHolidayDescription.text = "Sadly, no holidays today in your country. Work is mandatory"
+            }
+            else
+            {
+                tvHolidayDescription.text = "Sadly, no holidays today in ${chosenCountry.subSequence(0, chosenCountry.length - 4)}. Work is mandatory"
+            }
+
         }
         else
         {

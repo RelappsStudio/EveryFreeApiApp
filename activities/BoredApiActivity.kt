@@ -21,6 +21,7 @@ import com.relapps.everythingyouneed.Constants
 import com.relapps.everythingyouneed.R
 import com.relapps.everythingyouneed.models.BoredApiResponse
 import kotlinx.android.synthetic.main.activity_bored_api.*
+import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -50,8 +51,32 @@ class BoredApiActivity : AppCompatActivity() {
             getSomethingToDo()
         }
 
+        setupBottomBar()
 
+    }
 
+    private fun setupBottomBar() {
+        bottom_navigation_bored.setOnNavigationItemReselectedListener {
+            when(it.itemId)
+            {
+                R.id.action_home ->
+                {
+                    Constants.menuItemsTagSelection = 0
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+                R.id.action_tools ->
+                {
+                    Constants.menuItemsTagSelection = 1
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+                R.id.action_entertainment ->
+                {
+                    Constants.menuItemsTagSelection = 2
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+
+            }
+        }
     }
 
     private fun spinnerHandler() {

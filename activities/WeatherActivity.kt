@@ -33,6 +33,7 @@ import com.relapps.everythingyouneed.R
 import com.relapps.everythingyouneed.R.*
 import com.relapps.everythingyouneed.services.WeatherService
 import com.relapps.weatherapp.models.WeatherResponse
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_weather.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -68,8 +69,11 @@ class WeatherActivity : AppCompatActivity() {
             checkPermissions()
         }
 
+        setupBottomBar()
 
     }
+
+
 
     @SuppressLint("ResourceType")
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -337,6 +341,30 @@ class WeatherActivity : AppCompatActivity() {
         val sdf = SimpleDateFormat("HH:mm", Locale.UK)
         sdf.timeZone = TimeZone.getDefault()
         return sdf.format(date)
+    }
+
+    private fun setupBottomBar() {
+        bottom_navigation_weather.setOnNavigationItemReselectedListener {
+            when(it.itemId)
+            {
+                R.id.action_home ->
+                {
+                    Constants.menuItemsTagSelection = 0
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+                R.id.action_tools ->
+                {
+                    Constants.menuItemsTagSelection = 1
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+                R.id.action_entertainment ->
+                {
+                    Constants.menuItemsTagSelection = 2
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+
+            }
+        }
     }
 
 
