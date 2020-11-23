@@ -20,7 +20,7 @@ This app is developed for everybody that is currently learning and needs to see 
 ## Installation
 See tags and download current apk file. You will need to change settings to allow unidentified-source-app installation. If you already had installed previous versions you need to uninstall them for new installation to work.
 
-## Latest release V:0.0.6
+## Latest release V:0.0.8
 This release sees addition and update of following APIs:
 - [Bored](https://www.boredapi.com/documentation)
 - [OpenWeatherMap](https://openweathermap.org)
@@ -31,6 +31,8 @@ This release sees addition and update of following APIs:
 - [PlaceGOAT](https://placegoat.com) 
 - [RandomFox](https://randomfox.ca)
 - [The Cat API](thecatapi.com) 
+
+Also added were appLogo and title screen
 
 
 ## Roadmap
